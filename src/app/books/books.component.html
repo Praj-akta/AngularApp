@@ -1,0 +1,7 @@
+<h2 class="px-5 pt-3">Programming books list</h2>
+<!-- <button (click)="handleClick()">Click me for alert</button> -->
+<ul class="flex flex-wrap justify-center">
+  <ng-container *ngFor="let item of list; let i=index">
+    <app-book [book]="item" class="w-1/2 p-5 text-center"></app-book>
+  </ng-container>
+</ul>
